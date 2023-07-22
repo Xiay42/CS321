@@ -1,0 +1,32 @@
+========== START TESTING
+----- START PART mdp-basic: Basic test for succAndProbReward() that covers several edge cases.
+State(handTotal=0, nextCard=None, deckCounts=(2, 2)) Take
+starting take
+State(handTotal=0, nextCard=None, deckCounts=(2, 2)) Peek
+State(handTotal=0, nextCard=None, deckCounts=(2, 2)) Quit
+quit!
+State(handTotal=6, nextCard=None, deckCounts=(1, 1)) Take
+starting take
+FAIL: Expected '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1)), probability=0.5, reward=0), PossibleResult(successor=State(handTotal=11, nextCard=None, deckCounts=None), probability=0....', but got '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1)), probability=0.5, reward=0), PossibleResult(successor=State(handTotal=11, nextCard=None, deckCounts=(1, 0)), probability=...'
+Expected '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1)), probability=0.5, reward=0), PossibleResult(successor=State(handTotal=11, nextCard=None, deckCounts=None), probability=0....', but got '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1)), probability=0.5, reward=0), PossibleResult(successor=State(handTotal=11, nextCard=None, deckCounts=(1, 0)), probability=...'
+   state: State(handTotal=6, nextCard=None, deckCounts=(1, 1)), action: Take
+State(handTotal=11, nextCard=None, deckCounts=None) Take
+State(handTotal=11, nextCard=None, deckCounts=None) Peek
+State(handTotal=11, nextCard=None, deckCounts=None) Quit
+State(handTotal=11, nextCard=None, deckCounts=(1, 0)) Take
+starting take
+State(handTotal=0, nextCard=None, deckCounts=(3, 3, 3)) Take
+starting take
+State(handTotal=6, nextCard=None, deckCounts=(1, 1, 1)) Take
+starting take
+FAIL: Expected '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1, 1)), probability=0.3333333333333333, reward=0), PossibleResult(successor=State(handTotal=8, nextCard=None, deckCounts=(1, ...', but got '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1, 1)), probability=0.3333333333333333, reward=0), PossibleResult(successor=State(handTotal=8, nextCard=None, deckCounts=(1, ...'
+Expected '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1, 1)), probability=0.3333333333333333, reward=0), PossibleResult(successor=State(handTotal=8, nextCard=None, deckCounts=(1, ...', but got '[PossibleResult(successor=State(handTotal=7, nextCard=None, deckCounts=(0, 1, 1)), probability=0.3333333333333333, reward=0), PossibleResult(successor=State(handTotal=8, nextCard=None, deckCounts=(1, ...'
+   state: State(handTotal=6, nextCard=None, deckCounts=(1, 1, 1)), action: Take
+State(handTotal=1, nextCard=None, deckCounts=(2, 3, 3)) Take
+starting take
+State(handTotal=6, nextCard=None, deckCounts=(1, 1, 1)) Quit
+quit!
+State(handTotal=0, nextCard=None, deckCounts=None) Take
+----- END PART mdp-basic [took 0:00:00.000253 (max allowed 5 seconds)
+
+========== END TESTING 
